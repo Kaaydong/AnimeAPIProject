@@ -1,5 +1,7 @@
 package com.example.animeapi;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
@@ -9,9 +11,10 @@ public interface AnimeService {
 
     String BASE_URL = "https://ghibliapi.herokuapp.com/";
 
+    //https://ghibliapi.herokuapp.com/
 //    @GET("person?{trait}={specficTrait}")
 ////    Call<Anime> searchPerson(@Query("trait") String trait, @Query("specificTrait") String specificTrait);
 
-    @GET("person")
-    Call<Anime> searchPerson(@Query("gender") String specificTrait);
+    @GET("people")
+    Call<List<Anime>> searchPerson(@Query("name") String name);
 }
