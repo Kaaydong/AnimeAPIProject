@@ -6,7 +6,7 @@ public class Anime {
 
 //    private String message;
 //    private String status;
-    private String id, name, gender, age, eye_color, hair_color, films, species, url;
+    private String id, name, gender, age, eye_color, hair_color,  species, url;
 
 //    public String getMessage() {
 //        return message;
@@ -72,13 +72,13 @@ public class Anime {
         this.hair_color = hair_color;
     }
 
-    public String getFilms() {
-        return films;
-    }
-
-    public void setFilms(String films) {
-        this.films = films;
-    }
+//    public String getFilms() {
+//        return films;
+//    }
+//
+//    public void setFilms(String films) {
+//        this.films = films;
+//    }
 
     public String getSpecies() {
         return species;
