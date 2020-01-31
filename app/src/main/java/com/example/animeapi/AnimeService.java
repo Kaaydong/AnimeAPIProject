@@ -11,10 +11,9 @@ public interface AnimeService {
 
     String BASE_URL = "https://ghibliapi.herokuapp.com/";
 
-    //https://ghibliapi.herokuapp.com/
-//    @GET("person?{trait}={specficTrait}")
-////    Call<Anime> searchPerson(@Query("trait") String trait, @Query("specificTrait") String specificTrait);
 
     @GET("people")
     Call<List<Anime>> searchPerson(@Query("name") String name);
+
+    // Example Name - Ashitaka
 }

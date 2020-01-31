@@ -4,25 +4,8 @@ package com.example.animeapi;
 
 public class Anime {
 
-//    private String message;
-//    private String status;
-    private String id, name, gender, age, eye_color, hair_color,  species, url;
 
-//    public String getMessage() {
-//        return message;
-//    }
-//
-//    public void setMessage(String message) {
-//        this.message = message;
-//    }
-//
-//    public String getStatus() {
-//        return status;
-//    }
-//
-//    public void setStatus(String status) {
-//        this.status = status;
-//    }
+    private String id, name, gender, age, eye_color, hair_color,  species, url;
 
     public String getId() {
         return id;
@@ -71,14 +54,6 @@ public class Anime {
     public void setHair_color(String hair_color) {
         this.hair_color = hair_color;
     }
-
-//    public String getFilms() {
-//        return films;
-//    }
-//
-//    public void setFilms(String films) {
-//        this.films = films;
-//    }
 
     public String getSpecies() {
         return species;

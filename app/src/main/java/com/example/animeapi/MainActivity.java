@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 List<Anime> anime = response.body();
+                String test = anime.get(0).getAge();
                 for (Anime thing : anime) {
                     String content = "";
                     content += "Name: " + thing.getName();
@@ -109,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
                     content += "\nEye Colour: " + thing.getEye_color();
                     content += "\nHair Colour: " + thing.getHair_color();
                     textViewBody.setText(content);
-//                                textViewBody.append(content);
                 }
 
             }
