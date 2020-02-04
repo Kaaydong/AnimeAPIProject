@@ -1,11 +1,13 @@
 package com.example.animeapi;
 
 
+import java.util.List;
 
 public class Anime {
 
 
     private String id, name, gender, age, eye_color, hair_color,  species, url;
+    private List<String> films;
 
     public String getId() {
         return id;
@@ -72,8 +74,11 @@ public class Anime {
     }
 
 
+    public List<String> getFilms() {
+        return films;
+    }
 
-
-
-
+    public void setFilms(List<String> films) {
+        this.films = films;
+    }
 }
