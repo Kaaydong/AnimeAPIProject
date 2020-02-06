@@ -117,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<Anime>> call, Throwable t) {
                 Toast.makeText(MainActivity.this, t.getMessage(), Toast.LENGTH_SHORT).show();
-                Log.d("Error", "BIG ERROR");
-                Log.d("Error", t.getMessage());
+                Log.e("Error", "BIG ERROR");
+                Log.e("Error", t.getMessage());
             }
         });
     }
